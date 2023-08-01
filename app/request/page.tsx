@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import RequestForm from '@/components/form-request';
 
 const RequestPage = () => {
   return (
@@ -17,6 +18,7 @@ const RequestPage = () => {
             />
           </Link>
         </div>
+        <RequestForm />
       </div>
     </div>
   );
