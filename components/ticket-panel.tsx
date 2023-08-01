@@ -53,7 +53,6 @@ const TicketPanel = () => {
       <ConfigProvider renderEmpty={() => <Spin size={'large'} />}>
         <Table
           showHeader={tickets[0] ? true : false}
-          // loading={}
           columns={columns}
           expandable={{ expandedRowRender, defaultExpandedRowKeys: ['0'] }}
           dataSource={tickets}
