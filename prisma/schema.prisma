@@ -4,13 +4,13 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url = env("DB_URL") // uses connection pooling
+  url      = env("DB_URL") // uses connection pooling
 }
 
 model User {
-  id        Int     @id @default(autoincrement())
-  email     String  @unique
-  password  String @unique
+  id     Int      @id @default(autoincrement())
+  name   String   @unique
+  email  String   @unique
   ticket Ticket[]
 }
 
@@ -18,8 +18,8 @@ model Ticket {
   id          Int       @id @default(autoincrement())
   user        User      @relation(fields: [userId], references: [id])
   userId      Int
-  subject     String    
-  description String    
+  subject     String
+  description String
   status      String    @default("New")
   lastMsg     DateTime  @default(now())
   createdAt   DateTime  @default(now())
