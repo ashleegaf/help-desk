@@ -5,7 +5,7 @@
     "build": "prisma generate && prisma db push && next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "node prisma/seed.js"
+    "seed": "node prisma/seed.js --reset"
   },
   "dependencies": {
     "@prisma/client": "^4.14.0",
