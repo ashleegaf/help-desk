@@ -16,7 +16,6 @@ const TicketPanel = () => {
 
       if (res.ok) {
         const { detailedTickets, filteredAgents }: PanelData = await res.json();
-        console.log(detailedTickets)
 
         setTickets(detailedTickets);
         setAgents(filteredAgents);
