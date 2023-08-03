@@ -5,7 +5,7 @@ import { formatDate } from 'utils/utils';
 // Db queries to retrieve detailed ticket data
 const getTickets = async () => {
   const tickets = await prisma.ticket.findMany({
-    orderBy: [{ id: 'asc' }],
+    orderBy: [{ id: 'desc' }],
     include: {
       user: {
         select: {
