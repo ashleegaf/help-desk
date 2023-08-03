@@ -1,4 +1,5 @@
-<p align="center">A basic <a href="https://ag-help-desk.vercel.app/">help desk</a> app with ticket submission and panel view capabilities. Built with <a href="https://github.com/vercel/nextjs-postgres-auth-starter">Next.js-Prisma-PostgreSQL Starter</a>.</p>
+<p align="center">A basic <a href="https://ag-help-desk.vercel.app/">help desk</a> app with ticket submission and panel view capabilities.</p>
+<p align="center">Built with <a href="https://github.com/vercel/nextjs-postgres-auth-starter">Next.js-Prisma-PostgreSQL Starter</a>.</p>
 
 <p align="center">
   <a href="https://www.typescriptlang.org/">
