@@ -108,7 +108,7 @@ const RequestForm = () => {
           <button
             type='submit'
             disabled={loading}
-            className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:w-auto px-9 py-2.5 text-center'>
+            className={'text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:w-auto px-9 py-2.5 text-center ' + (loading ? 'bg-slate-100 text-slate-500' : 'bg-blue-700 hover:bg-blue-800')}>
             Submit
           </button>
         </div>
