@@ -1,6 +1,3 @@
-'use client';
-
-import React from 'react';
 import { DetailedTicket } from 'types/types';
 
 // Generate expanded row data for ticket records via their rowKey

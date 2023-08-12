@@ -1,9 +1,7 @@
-// These styles apply to every route in the application
 import "@/styles/globals.css";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
-import { Suspense } from "react";
 
 const inter = Inter({
   variable: "--font-inter",

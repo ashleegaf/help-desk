@@ -1,9 +1,7 @@
-'use client';
-
-import React from 'react';
 import { DownOutlined } from '@ant-design/icons';
 import type { TableColumnsType, MenuProps } from 'antd';
-import { Dropdown, Space } from 'antd';
+import { Dropdown } from 'antd';
+import { Space } from 'antd';
 import { DetailedTicket, AgentItems } from 'types/types';
 import { updateDB, updateState } from 'utils/utils';
 
