@@ -56,3 +56,5 @@ export const GET = async () => {
 
   return NextResponse.json({ detailedTickets, filteredAgents }, { status: 200 });
 };
+
+export const revalidate = 0;

@@ -1,7 +1,9 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { ConfigProvider, Spin, Table } from 'antd';
+import { ConfigProvider } from 'antd';
+import { Spin } from 'antd';
+import { Table } from 'antd';
 import { DetailedTicket, Agent, PanelData } from 'types/types';
 import { expandedRowRender } from './ticket-panel-row-x';
 import { createColumns } from './ticket-panel-col';
@@ -9,14 +11,14 @@ import { createColumns } from './ticket-panel-col';
 const TicketPanel = () => {
   const [tickets, setTickets] = useState<DetailedTicket[]>([]);
   const [agents, setAgents] = useState<Agent[]>([]);
-
-  const fetchTickets = async () => {
+  
+  const getTickets = async () => {
     try {
       const res = await fetch('/api/view-tickets');
-
+  
       if (res.ok) {
         const { detailedTickets, filteredAgents }: PanelData = await res.json();
-
+  
         setTickets(detailedTickets);
         setAgents(filteredAgents);
       }
@@ -27,13 +29,13 @@ const TicketPanel = () => {
 
   // Fetch tickets on page load
   useEffect(() => {
-    fetchTickets();
+    getTickets();
   }, []);
 
   // Refresh panel data periodically
   useEffect(() => {
     const interval = setInterval(() => {
-      fetchTickets();
+      getTickets();
     }, 1 * 60 * 1000);
 
     return () => clearInterval(interval);
