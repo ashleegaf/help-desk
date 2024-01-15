@@ -5,8 +5,8 @@ import { ConfigProvider } from 'antd';
 import { Spin } from 'antd';
 import { Table } from 'antd';
 import { DetailedTicket, Agent, PanelData } from 'types/types';
-import { expandedRowRender } from './TicketPanelRow';
-import { createColumns } from './TicketPanelColumn';
+import { expandedRowRender } from '@/components/tickets/TicketPanelRow';
+import { createColumns } from '@/components/tickets/TicketPanelColumn';
 
 const TicketPanel = () => {
   const [tickets, setTickets] = useState<DetailedTicket[]>([]);
