@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import TicketPanel from '@/components/ticket-panel';
+import TicketPanel from '@/components/TicketPanel';
 
 const PanelPage = () => {
   return (
